@@ -16,19 +16,6 @@
 - 实现ARP代理需要满足两个条件：1.没有路由功能的主机，2.有路由功能，目的地指向本地端口
 ```
 
-##### VRP
-
-用户视图 - 系统视图 - 接口视图 - 协议视图
-
-设备启动时会加载保存的配置文件到内存，并作为当前配置文件
-
-```diff
-+ <AR3>dis current-configuration	#显示当前配置文件
-+ <AR3>dis saved-configuration		#显示已保存的配置文件
-+ <AR3>dis startup					#查看下次启动的配置文件
-+ <AR3>startup saved-configuration sslvpn.zip	#修改下次启动的配置文件为sslvpn.zip
-```
-
 ##### IP路由基础
 
 路由器的两个基本功能
@@ -178,14 +165,6 @@ Destination/Mask    Proto   Pre  Cost      Flags NextHop         Interface
 ```diff
 - 浮动静态路由：在有多条线路的情况下使数据仅从其中一条链路上转发，路由表中也仅存在一个下一条，其他线路作为备份。只有主链路失效时备份链路才被放入路由表
 ```
-
-
-
-
-
-
-
-
 
 
 
