@@ -33,17 +33,17 @@
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="E0954DBF-96CA-4d1e-A96E-608C4AC8E151" name="PC2" poe="0" model="PC" settings=" -simpc_ip 192.168.20.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.20.254  -simpc_mac 54-89-98-17-35-57  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 114.114.114.114  -simpc_dns2 8.8.8.8  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-17-35-57" com_port="0" bootmode="0" cx="213.000000" cy="545.000000" edit_left="240" edit_top="599">
+        <dev id="E0954DBF-96CA-4d1e-A96E-608C4AC8E151" name="PC2" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-17-35-57  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-17-35-57" com_port="0" bootmode="0" cx="213.000000" cy="545.000000" edit_left="240" edit_top="599">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="1C4DD813-6EF0-4462-AE5E-C1FCC1C0B2E3" name="PC3" poe="0" model="PC" settings=" -simpc_ip 192.168.30.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.30.254  -simpc_mac 54-89-98-42-6C-87  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 114.114.114.114  -simpc_dns2 8.8.8.8  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-42-6C-87" com_port="0" bootmode="0" cx="314.000000" cy="546.000000" edit_left="341" edit_top="600">
+        <dev id="1C4DD813-6EF0-4462-AE5E-C1FCC1C0B2E3" name="PC3" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-42-6C-87  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-42-6C-87" com_port="0" bootmode="0" cx="314.000000" cy="546.000000" edit_left="341" edit_top="600">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="28AF8EAA-128A-47c5-9527-7D97599EB57F" name="PC4" poe="0" model="PC" settings=" -simpc_ip 192.168.40.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.40.254  -simpc_mac 54-89-98-A1-38-7A  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 114.114.114.114  -simpc_dns2 8.8.8.8  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-A1-38-7A" com_port="0" bootmode="0" cx="469.000000" cy="546.000000" edit_left="496" edit_top="600">
+        <dev id="28AF8EAA-128A-47c5-9527-7D97599EB57F" name="PC4" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-A1-38-7A  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-A1-38-7A" com_port="0" bootmode="0" cx="469.000000" cy="546.000000" edit_left="496" edit_top="600">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
@@ -51,15 +51,6 @@
         <dev id="EDFF76BB-94E7-404b-9294-AEE88FF3E8FD" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-D5-10-39" com_port="2000" bootmode="0" cx="268.000000" cy="206.000000" edit_left="254" edit_top="224">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
-            </slot>
-        </dev>
-        <dev id="876CF0A5-6C8E-4712-B1E3-0356EFA27A9C" name="Cloud1" poe="0" model="Cloud" settings="" system_mac="" com_port="0" bootmode="0" cx="51.500000" cy="229.500000" edit_left="94" edit_top="314">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
-                <interface sztype="Ethernet" interfacename="GE" count="0" />
-                <interface sztype="Serial" interfacename="Serial" count="0" />
-                <interfaceMap sztype="Ethernet" interfacename="Ethernet" displayNo="1" remoteDisplayNo="2" adapterUid="" isOpen="0" udpPort="0" peerIPAdd="0.0.0.0" peerIP="0" peerPort="0" />
-                <interfaceMap sztype="Ethernet" interfacename="Ethernet" displayNo="2" remoteDisplayNo="1" adapterUid="\Device\NPF_{68CFDCF7-8F34-4639-896F-D233A6A8FB75}" isOpen="1" udpPort="0" peerIPAdd="0.0.0.0" peerIP="0" peerPort="0" />
             </slot>
         </dev>
         <dev id="21312C6C-0038-4d6e-88EB-7972C1845BBB" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-66-1F-D3" com_port="2004" bootmode="0" cx="846.000000" cy="46.000000" edit_left="873" edit_top="28">
@@ -70,17 +61,17 @@
             </slot>
             <slot isMainBoard="0" id="3" type="521" />
         </dev>
-        <dev id="73A6242E-DC22-4a62-8318-C4E0716EB048" name="Server2" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-24-11-9F -ipaddr 4.0.0.1 -ipmask 255.255.255.0 -gateway 4.0.0.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-8F-28-BB" com_port="0" bootmode="0" cx="978.000000" cy="385.000000" edit_left="1005" edit_top="439">
+        <dev id="73A6242E-DC22-4a62-8318-C4E0716EB048" name="Server2" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-24-11-9F -ipaddr 4.0.0.1 -ipmask 255.255.255.0 -gateway 4.0.0.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-BD-7D-40" com_port="0" bootmode="0" cx="978.000000" cy="385.000000" edit_left="1005" edit_top="439">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="49CCFCC1-2EE6-4f8f-B89D-BB6978CD9BC5" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.10.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.254  -simpc_mac 54-89-98-1E-34-A4  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 114.114.114.114  -simpc_dns2 8.8.8.8  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-1E-34-A4" com_port="0" bootmode="0" cx="70.000000" cy="544.000000" edit_left="97" edit_top="598">
+        <dev id="49CCFCC1-2EE6-4f8f-B89D-BB6978CD9BC5" name="PC1" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-1E-34-A4  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-1E-34-A4" com_port="0" bootmode="0" cx="70.000000" cy="544.000000" edit_left="97" edit_top="598">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="B3338A85-F9A7-4ee1-B8EB-6172FCC34F94" name="Server1" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-2F-30-F4 -ipaddr 3.0.0.1 -ipmask 255.255.255.0 -gateway 3.0.0.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist _www.moive.com_4.0.0.1_www.wakin.com_4.0.0.1" system_mac="54-89-98-8D-3D-B6" com_port="0" bootmode="0" cx="732.000000" cy="383.000000" edit_left="759" edit_top="437">
+        <dev id="B3338A85-F9A7-4ee1-B8EB-6172FCC34F94" name="Server1" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-2F-30-F4 -ipaddr 3.0.0.1 -ipmask 255.255.255.0 -gateway 3.0.0.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist _www.moive.com_4.0.0.1_www.wakin.com_4.0.0.1" system_mac="54-89-98-80-34-2E" com_port="0" bootmode="0" cx="732.000000" cy="383.000000" edit_left="759" edit_top="437">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
@@ -128,9 +119,6 @@
         </line>
         <line srcDeviceID="EDFF76BB-94E7-404b-9294-AEE88FF3E8FD" destDeviceID="4804CF8D-8480-478b-A882-88B42ABE70B5">
             <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="327.837616" srcBoundRect_Y="204.954895" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="447.162384" tarBoundRect_Y="103.045105" tarOffset_X="-5.000000" tarOffset_Y="9.000000" />
-        </line>
-        <line srcDeviceID="876CF0A5-6C8E-4712-B1E3-0356EFA27A9C" destDeviceID="B1AF53AA-5764-4205-9975-09AC6FF7A823">
-            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="130.277191" srcBoundRect_Y="325.206543" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="4" tarBoundRectIsMoved="1" tarBoundRect_X="159.672989" tarBoundRect_Y="368.320404" tarOffset_X="-75.000000" tarOffset_Y="4.000000" />
         </line>
     </lines>
     <shapes>
