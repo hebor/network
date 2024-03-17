@@ -1,0 +1,53 @@
+{
+ "projectInfo": {
+  "name": "vlan基础实验",
+  "path": "vlan_basic_experiment",
+  "visibility": "2",
+  "introduction": "",
+  "label": []
+ },
+ "deviceInfoList": [
+  {
+   "resourceName": "S5820V2-54QS-GE_1",
+   "resourceCategory": "交换机",
+   "resourceModel": "S5820V2-54QS-GE",
+   "resourceVersion": "CMW7.1.075-A7571",
+   "configPath": "DeviceConfig\\S5820V2-54QS-GE_1.cfg"
+  },
+  {
+   "resourceName": "S5820V2-54QS-GE_2",
+   "resourceCategory": "交换机",
+   "resourceModel": "S5820V2-54QS-GE",
+   "resourceVersion": "CMW7.1.075-A7571",
+   "configPath": "DeviceConfig\\S5820V2-54QS-GE_2.cfg"
+  },
+  {
+   "resourceName": "PC_3",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_3.cfg"
+  },
+  {
+   "resourceName": "PC_4",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_4.cfg"
+  },
+  {
+   "resourceName": "PC_5",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_5.cfg"
+  },
+  {
+   "resourceName": "PC_6",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_6.cfg"
+  }
+ ]
+}

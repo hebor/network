@@ -1,0 +1,282 @@
+version = 5.10.2
+[vbox 127.0.0.1:16600]
+    workingdir = e:\gitee\network\hcl实验拓扑文件\static_route_experiment\working
+    udp = 10000
+    [[MSR36-20 MSR36-20_1]]
+        device_id = 1
+        bridge_mac = 64-40-e1-ee-01-00
+        slot0 = MSR36 384
+        GE_0/0 = MSR36-20_2 GE_0/0
+        GE_0/1 = MSR36-20_4 GE_0/0
+        GE_0/2 = PC_7 GE_0/1
+        x = -384.0
+        y = 45.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_2]]
+        device_id = 2
+        bridge_mac = 64-40-e5-ed-02-00
+        slot0 = MSR36 384
+        GE_0/0 = MSR36-20_1 GE_0/0
+        GE_0/1 = MSR36-20_3 GE_0/0
+        x = -126.0
+        y = 45.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_3]]
+        device_id = 3
+        bridge_mac = 64-41-02-d7-03-00
+        slot0 = MSR36 384
+        GE_0/0 = MSR36-20_2 GE_0/1
+        GE_0/1 = MSR36-20_4 GE_0/1
+        GE_0/2 = PC_8 GE_0/1
+        x = 145.0
+        y = 45.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_4]]
+        device_id = 4
+        bridge_mac = 64-41-0d-45-04-00
+        slot0 = MSR36 384
+        GE_0/1 = MSR36-20_3 GE_0/1
+        GE_0/0 = MSR36-20_1 GE_0/1
+        GE_0/2 = MSR36-20_5 GE_0/0
+        GE_5/0 = MSR36-20_5 GE_0/1
+        x = -126.0
+        y = -198.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_5]]
+        device_id = 5
+        bridge_mac = 64-41-16-76-05-00
+        slot0 = MSR36 384
+        GE_0/0 = MSR36-20_4 GE_0/2
+        GE_0/1 = MSR36-20_4 GE_5/0
+        GE_0/2 = PC_6 GE_0/1
+        x = 145.0
+        y = -394.0
+        z = 5.0
+    [[PC PC_7]]
+        device_id = 7
+        bridge_mac = 64-41-32-2d-07-00
+        slot0 = PC 250
+        GE_0/1 = MSR36-20_1 GE_0/2
+        symbol = PC
+        x = -384.0
+        y = 218.0
+        z = 5.0
+    [[PC PC_8]]
+        device_id = 8
+        bridge_mac = 64-41-36-f0-08-00
+        slot0 = PC 250
+        GE_0/1 = MSR36-20_3 GE_0/2
+        symbol = PC
+        x = 145.0
+        y = 218.0
+        z = 5.0
+    [[PC PC_6]]
+        device_id = 6
+        bridge_mac = 64-43-2c-39-06-00
+        slot0 = PC 250
+        GE_0/1 = MSR36-20_5 GE_0/2
+        symbol = PC
+        x = 392.0
+        y = -198.0
+        z = 5.0
+[Non-vBox-DATA]
+    workdir = working
+    m11 = 1.0999999999999999
+    m22 = 1.0999999999999999
+    [[NOTE 1]]
+        text = "实验需求：\n按照图示配置 IP 地址\n按照如下路径规划配置静态路由，实现连接 PC 的业务网段互通\n192.168.1.0/24 网段到达 192.168.2.0/24 网段经过 R1，R2，R3\n192.168.2.0/24 网段到达 192.168.1.0/24 网段经过 R3，R4，R1\n192.168.1.0/24 网段到达 192.168.3.0/24 网段经过 R1，R4，R5\n192.168.2.0/24 网段到达 192.168.3.0/24 网段经过 R3，R4，R5\n192.168.3.0/24 网段到达 192.168.1.0/24 网段和 192.168.2.0/24 网段的路由来回一致\nR5 上不允许出现到达其他业务网段的明细路由\n所有经过 R4 和 R5 的流量通过等价路由实现负载分担"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = -406.0
+        y = 302.5
+        z = 6.0
+    [[NOTE 2]]
+        text = "192.168.3.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 220.0
+        y = -292.5
+        z = 6.0
+    [[NOTE 3]]
+        text = "10.6.6.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 31.0
+        y = -249.5
+        z = 6.0
+    [[NOTE 4]]
+        text = "10.5.5.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -55.0
+        y = -304.5
+        z = 6.0
+    [[NOTE 5]]
+        text = "10.4.4.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -31.0
+        y = -74.5
+        z = 6.0
+    [[NOTE 6]]
+        text = "10.3.3.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -29.0
+        y = 37.5
+        z = 6.0
+    [[NOTE 7]]
+        text = "10.2.2.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -289.0
+        y = 37.5
+        z = 6.0
+    [[NOTE 8]]
+        text = "10.1.1.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -281.0
+        y = -68.5
+        z = 6.0
+    [[NOTE 9]]
+        text = "192.168.2.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 98.0
+        y = 146.5
+        z = 6.0
+    [[NOTE 10]]
+        text = "192.168.1.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -424.0
+        y = 142.5
+        z = 6.0
+    [[NOTE 11]]
+        text = "GE_0/1"
+        interface = PC_6 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -71.75
+        y = -34.0
+        z = 6.0
+    [[NOTE 12]]
+        text = "GE_0/1"
+        interface = PC_8 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = -25.0
+        z = 6.0
+    [[NOTE 13]]
+        text = "GE_0/1"
+        interface = PC_7 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = -25.0
+        z = 6.0
+    [[NOTE 14]]
+        text = "GE_0/2"
+        interface = MSR36-20_5 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 51.75
+        y = 64.0
+        z = 6.0
+    [[NOTE 15]]
+        text = "GE_0/1"
+        interface = MSR36-20_5 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -63.099093514240025
+        y = 84.25712070224978
+        z = 6.0
+    [[NOTE 16]]
+        text = "GE_0/0"
+        interface = MSR36-20_5 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -77.75
+        y = 64.0
+        z = 6.0
+    [[NOTE 17]]
+        text = "GE_5/0"
+        interface = MSR36-20_4 GE_5/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 72.40090648575998
+        y = -13.742879297750221
+        z = 6.0
+    [[NOTE 18]]
+        text = "GE_0/2"
+        interface = MSR36-20_4 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 57.75
+        y = -34.0
+        z = 6.0
+    [[NOTE 19]]
+        text = "GE_0/0"
+        interface = MSR36-20_4 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -74.5
+        y = 75.75
+        z = 6.0
+    [[NOTE 20]]
+        text = "GE_0/1"
+        interface = MSR36-20_4 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 57.75
+        y = 75.75
+        z = 6.0
+    [[NOTE 21]]
+        text = "GE_0/2"
+        interface = MSR36-20_3 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = 55.0
+        z = 6.0
+    [[NOTE 22]]
+        text = "GE_0/1"
+        interface = MSR36-20_3 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -77.75
+        y = -45.75
+        z = 6.0
+    [[NOTE 23]]
+        text = "GE_0/0"
+        interface = MSR36-20_3 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -77.75
+        y = 15.0
+        z = 6.0
+    [[NOTE 24]]
+        text = "GE_0/1"
+        interface = MSR36-20_2 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 57.75
+        y = 15.0
+        z = 6.0
+    [[NOTE 25]]
+        text = "GE_0/0"
+        interface = MSR36-20_2 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -74.5
+        y = 15.0
+        z = 6.0
+    [[NOTE 26]]
+        text = "GE_0/2"
+        interface = MSR36-20_1 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = 55.0
+        z = 6.0
+    [[NOTE 27]]
+        text = "GE_0/1"
+        interface = MSR36-20_1 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 54.5
+        y = -45.75
+        z = 6.0
+    [[NOTE 28]]
+        text = "GE_0/0"
+        interface = MSR36-20_1 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 54.5
+        y = 15.0
+        z = 6.0
+    [[SHAPE 1]]
+        type = rectangle
+        width = 837.0
+        height = 239.0
+        fill_color = "#55ff00"
+        border_color = "#ffffff"
+        border_width = 1
+        border_style = 0
+        x = -419.0
+        y = 296.0
+        z = 4.0
