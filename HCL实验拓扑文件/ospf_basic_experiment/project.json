@@ -1,0 +1,46 @@
+{
+ "projectInfo": {
+  "name": "ospf基本实验",
+  "path": "ospf_basic_experiment",
+  "visibility": "2",
+  "introduction": "",
+  "label": []
+ },
+ "deviceInfoList": [
+  {
+   "resourceName": "MSR36-20_1",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_1.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_2",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_2.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_3",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_3.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_4",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_4.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_5",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_5.cfg"
+  }
+ ]
+}

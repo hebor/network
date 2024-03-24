@@ -1,0 +1,67 @@
+{
+ "projectInfo": {
+  "name": "acl基本实验",
+  "path": "acl_basic_experiment",
+  "visibility": "2",
+  "introduction": "",
+  "label": []
+ },
+ "deviceInfoList": [
+  {
+   "resourceName": "PC_1",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_1.cfg"
+  },
+  {
+   "resourceName": "PC_2",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_2.cfg"
+  },
+  {
+   "resourceName": "S5820V2-54QS-GE_3",
+   "resourceCategory": "交换机",
+   "resourceModel": "S5820V2-54QS-GE",
+   "resourceVersion": "CMW7.1.075-A7571",
+   "configPath": "DeviceConfig\\S5820V2-54QS-GE_3.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_4",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_4.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_5",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_5.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_6",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_6.cfg"
+  },
+  {
+   "resourceName": "MSR36-20_7",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\MSR36-20_7.cfg"
+  },
+  {
+   "resourceName": "PC_8",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_8.cfg"
+  }
+ ]
+}

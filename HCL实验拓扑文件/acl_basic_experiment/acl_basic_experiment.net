@@ -1,0 +1,235 @@
+version = 5.10.2
+[vbox 127.0.0.1:16600]
+    workingdir = e:\github\network\hcl实验拓扑文件\acl_basic_experiment\working
+    udp = 10000
+    [[PC PC_1]]
+        device_id = 1
+        bridge_mac = 8a-ac-c6-fb-01-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_3 GE_0/1
+        symbol = PC
+        x = -404.0
+        y = -300.0
+        z = 5.0
+    [[PC PC_2]]
+        device_id = 2
+        bridge_mac = 8a-ac-cf-15-02-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_3 GE_0/2
+        symbol = PC
+        x = -404.0
+        y = 116.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_3]]
+        device_id = 3
+        bridge_mac = 8a-ac-e0-f2-03-00
+        slot0 = S5800 384
+        GE_0/1 = PC_1 GE_0/1
+        GE_0/2 = PC_2 GE_0/1
+        GE_0/3 = MSR36-20_4 GE_0/0
+        x = -404.0
+        y = -96.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_4]]
+        device_id = 4
+        bridge_mac = 8a-ad-1b-ca-04-00
+        slot0 = MSR36 384
+        GE_0/0 = S5820V2-54QS-GE_3 GE_0/3
+        GE_0/1 = MSR36-20_5 GE_0/0
+        x = -145.0
+        y = -96.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_5]]
+        device_id = 5
+        bridge_mac = 8a-ad-22-44-05-00
+        slot0 = MSR36 384
+        GE_0/0 = MSR36-20_4 GE_0/1
+        GE_0/1 = MSR36-20_6 GE_0/0
+        GE_0/2 = PC_8 GE_0/1
+        x = 110.0
+        y = -96.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_6]]
+        device_id = 6
+        bridge_mac = 8a-ad-28-3c-06-00
+        slot0 = MSR36 384
+        GE_0/0 = MSR36-20_5 GE_0/1
+        GE_0/1 = MSR36-20_7 GE_0/0
+        x = 379.0
+        y = -96.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_7]]
+        device_id = 7
+        bridge_mac = 8a-ad-31-8c-07-00
+        slot0 = MSR36 384
+        GE_0/0 = MSR36-20_6 GE_0/1
+        x = 379.0
+        y = -307.0
+        z = 5.0
+    [[PC PC_8]]
+        device_id = 8
+        bridge_mac = 8a-ad-42-dc-08-00
+        slot0 = PC 250
+        GE_0/1 = MSR36-20_5 GE_0/2
+        symbol = PC
+        x = 110.0
+        y = 119.0
+        z = 5.0
+[Non-vBox-DATA]
+    workdir = working
+    [[NOTE 1]]
+        text = "说明：通过R7模拟服务器，R7需要提供Ftp、Telnet两种服务\n实验需求：\n    1、按照图示配置IP，并实现全网路由互通\n    2、在R7上开启Telnet和Ftp服务\n    3、配置ACL实现如下效果\n        Ⅰ、192.168.1.0/24 不允许访问 192.168.2.0/24，要求使用基本ACL实现\n        Ⅱ、PC1可以访问R7的Telnet服务，但不能访问Ftp服务\n        Ⅲ、PC2可以访问R7的Ftp服务，但不能访问Telnet服务\n        Ⅳ、192.168.2.0/24 不允许访问R7，要求通过高级ACL实现"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = -277.0
+        y = 204.5
+        z = 6.0
+    [[NOTE 2]]
+        text = "192.168.1.2/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -444.0
+        y = 190.5
+        z = 6.0
+    [[NOTE 3]]
+        text = "192.168.1.1/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -446.0
+        y = -329.5
+        z = 6.0
+    [[NOTE 4]]
+        text = "192.168.3.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 326.0
+        y = -195.5
+        z = 6.0
+    [[NOTE 5]]
+        text = "192.168.2.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 58.0
+        y = 26.5
+        z = 6.0
+    [[NOTE 6]]
+        text = "100.2.2.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 202.0
+        y = -105.5
+        z = 6.0
+    [[NOTE 7]]
+        text = "100.1.1.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -58.0
+        y = -109.5
+        z = 6.0
+    [[NOTE 8]]
+        text = "192.168.1.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -326.0
+        y = -114.5
+        z = 6.0
+    [[NOTE 9]]
+        text = "GE_0/1"
+        interface = PC_8 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = -25.0
+        z = 6.0
+    [[NOTE 10]]
+        text = "GE_0/0"
+        interface = MSR36-20_7 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -4.0
+        y = 66.0
+        z = 6.0
+    [[NOTE 11]]
+        text = "GE_0/1"
+        interface = MSR36-20_6 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = -25.0
+        z = 6.0
+    [[NOTE 12]]
+        text = "GE_0/0"
+        interface = MSR36-20_6 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -57.25
+        y = 23.0
+        z = 6.0
+    [[NOTE 13]]
+        text = "GE_0/2"
+        interface = MSR36-20_5 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -3.0
+        y = 66.0
+        z = 6.0
+    [[NOTE 14]]
+        text = "GE_0/1"
+        interface = MSR36-20_5 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 49.25
+        y = 23.0
+        z = 6.0
+    [[NOTE 15]]
+        text = "GE_0/0"
+        interface = MSR36-20_5 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -52.75
+        y = 23.0
+        z = 6.0
+    [[NOTE 16]]
+        text = "GE_0/1"
+        interface = MSR36-20_4 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 49.75
+        y = 24.0
+        z = 6.0
+    [[NOTE 17]]
+        text = "GE_0/0"
+        interface = MSR36-20_4 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -59.75
+        y = 23.0
+        z = 6.0
+    [[NOTE 18]]
+        text = "GE_0/3"
+        interface = S5820V2-54QS-GE_3 GE_0/3
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 49.75
+        y = 23.0
+        z = 6.0
+    [[NOTE 19]]
+        text = "GE_0/2"
+        interface = S5820V2-54QS-GE_3 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -3.0
+        y = 69.0
+        z = 6.0
+    [[NOTE 20]]
+        text = "GE_0/1"
+        interface = S5820V2-54QS-GE_3 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = -25.0
+        z = 6.0
+    [[NOTE 21]]
+        text = "GE_0/1"
+        interface = PC_2 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 0.0
+        y = -25.0
+        z = 6.0
+    [[NOTE 22]]
+        text = "GE_0/1"
+        interface = PC_1 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -2.0
+        y = 65.0
+        z = 6.0
+    [[SHAPE 1]]
+        type = rectangle
+        width = 514.0
+        height = 187.0
+        fill_color = "#00ff00"
+        border_color = "#666666"
+        border_style = 0
+        x = -280.0
+        y = 200.0
+        z = 3.0
