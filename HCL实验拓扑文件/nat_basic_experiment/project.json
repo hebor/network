@@ -1,0 +1,60 @@
+{
+ "projectInfo": {
+  "name": "nat基本实验",
+  "path": "nat_basic_experiment",
+  "visibility": "2",
+  "introduction": "",
+  "label": []
+ },
+ "deviceInfoList": [
+  {
+   "resourceName": "FTP_1",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\FTP_1.cfg"
+  },
+  {
+   "resourceName": "SW_1",
+   "resourceCategory": "交换机",
+   "resourceModel": "S5820V2-54QS-GE",
+   "resourceVersion": "CMW7.1.075-A7571",
+   "configPath": "DeviceConfig\\SW_1.cfg"
+  },
+  {
+   "resourceName": "PC_1",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_1.cfg"
+  },
+  {
+   "resourceName": "R1",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\R1.cfg"
+  },
+  {
+   "resourceName": "R2",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\R2.cfg"
+  },
+  {
+   "resourceName": "R3",
+   "resourceCategory": "路由器",
+   "resourceModel": "MSR36-20",
+   "resourceVersion": "CMW7.1.064-R0821P11",
+   "configPath": "DeviceConfig\\R3.cfg"
+  },
+  {
+   "resourceName": "PC_2",
+   "resourceCategory": "终端",
+   "resourceModel": "PC",
+   "resourceVersion": "",
+   "configPath": "DeviceConfig\\PC_2.cfg"
+  }
+ ]
+}

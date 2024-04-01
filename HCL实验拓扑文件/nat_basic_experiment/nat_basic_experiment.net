@@ -1,0 +1,246 @@
+version = 5.10.2
+[vbox 127.0.0.1:16600]
+    workingdir = e:\github\network\hcl实验拓扑文件\nat_basic_experiment\working
+    udp = 10000
+    [[MSR36-20 FTP_1]]
+        device_id = 1
+        bridge_mac = 06-b5-8b-d4-01-00
+        slot0 = MSR36 384
+        GE_0/0 = SW_1 GE_0/1
+        x = -531.0
+        y = -267.0
+        z = 5.0
+    [[MSR36-20 R1]]
+        device_id = 4
+        bridge_mac = 06-b6-40-68-04-00
+        slot0 = MSR36 384
+        GE_0/0 = SW_1 GE_0/3
+        GE_0/1 = R2 GE_0/0
+        x = -144.0
+        y = -78.0
+        z = 5.0
+    [[MSR36-20 R2]]
+        device_id = 5
+        bridge_mac = 06-b6-4d-f9-05-00
+        slot0 = MSR36 384
+        GE_0/0 = R1 GE_0/1
+        GE_0/1 = R3 GE_0/0
+        x = 65.0
+        y = -81.0
+        z = 5.0
+    [[MSR36-20 R3]]
+        device_id = 6
+        bridge_mac = 06-b6-51-f3-06-00
+        slot0 = MSR36 384
+        GE_0/0 = R2 GE_0/1
+        GE_0/1 = PC_2 GE_0/1
+        x = 249.0
+        y = -83.0
+        z = 5.0
+    [[S5820V2-54QS-GE SW_1]]
+        device_id = 2
+        bridge_mac = 06-b5-a5-0a-02-00
+        slot0 = S5800 384
+        GE_0/1 = FTP_1 GE_0/0
+        GE_0/2 = PC_1 GE_0/1
+        GE_0/3 = R1 GE_0/0
+        x = -375.0
+        y = -79.0
+        z = 5.0
+    [[PC PC_1]]
+        device_id = 3
+        bridge_mac = 06-b5-db-c7-03-00
+        slot0 = PC 250
+        GE_0/1 = SW_1 GE_0/2
+        symbol = PC
+        x = -531.0
+        y = 93.0
+        z = 5.0
+    [[PC PC_2]]
+        device_id = 7
+        bridge_mac = 06-bf-76-b1-07-00
+        slot0 = PC 250
+        GE_0/1 = R3 GE_0/1
+        symbol = PC
+        x = 449.0
+        y = -84.0
+        z = 5.0
+[Non-vBox-DATA]
+    workdir = working
+    m11 = 0.9
+    m22 = 0.9
+    [[NOTE 1]]
+        text = "实验需求：\n1、内网A通过R1接入互联网，内网B通过R3接入互联网\n2、内网A内部通过单臂路由实现访问外网\n3、内网A通过NAPT使用R1的公网地址访问公网\n4、内网B通过EasyIP访问公网\n5、内网A配置NAT Server把FTP映射到外网，使PCB能够访问"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = -200.0
+        y = 199.5
+        z = 6.0
+    [[NOTE 2]]
+        text = "192.168.1.0/24"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = 314.0
+        y = -99.0
+        z = 6.0
+    [[NOTE 3]]
+        text = "10.2.2.0/24"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = 127.0
+        y = -96.0
+        z = 6.0
+    [[NOTE 4]]
+        text = "10.1.1.0/24"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = -79.0
+        y = -86.0
+        z = 6.0
+    [[NOTE 5]]
+        text = "vlan20: 192.168.2.0/24"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = -505.0
+        y = 22.5
+        z = 6.0
+    [[NOTE 6]]
+        text = "vlan10: 192.168.1.0/24"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = -516.0
+        y = -169.5
+        z = 6.0
+    [[NOTE 7]]
+        text = "内网B"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 471.0
+        y = -290.5
+        z = 6.0
+    [[NOTE 8]]
+        text = "公网"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 218.0
+        y = -293.5
+        z = 6.0
+    [[NOTE 9]]
+        text = "内网A"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -202.0
+        y = -286.5
+        z = 6.0
+    [[NOTE 10]]
+        text = "GE_0/1"
+        interface = PC_7 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -48.0
+        y = 3.25
+        z = 6.0
+    [[NOTE 11]]
+        text = "GE_0/1"
+        interface = R3 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 48.0
+        y = 21.75
+        z = 6.0
+    [[NOTE 12]]
+        text = "GE_0/0"
+        interface = MSR36-20_6 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -51.0
+        y = 3.5
+        z = 6.0
+    [[NOTE 13]]
+        text = "GE_0/1"
+        interface = MSR36-20_5 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 49.0
+        y = 25.5
+        z = 6.0
+    [[NOTE 14]]
+        text = "GE_0/0"
+        interface = MSR36-20_5 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -52.25
+        y = 4.75
+        z = 6.0
+    [[NOTE 15]]
+        text = "GE_0/1"
+        interface = MSR36-20_4 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 50.25
+        y = 21.25
+        z = 6.0
+    [[NOTE 16]]
+        text = "GE_0/0"
+        interface = MSR36-20_4 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -50.75
+        y = 2.75
+        z = 6.0
+    [[NOTE 17]]
+        text = "GE_0/1"
+        interface = PC_3 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 29.0
+        y = -28.0
+        z = 6.0
+    [[NOTE 18]]
+        text = "GE_0/3"
+        interface = S5820V2-54QS-GE_2 GE_0/3
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 49.75
+        y = 23.25
+        z = 6.0
+    [[NOTE 19]]
+        text = "GE_0/2"
+        interface = S5820V2-54QS-GE_2 GE_0/2
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -49.0
+        y = 58.0
+        z = 6.0
+    [[NOTE 20]]
+        text = "GE_0/1"
+        interface = S5820V2-54QS-GE_2 GE_0/1
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = -49.0
+        y = -32.0
+        z = 6.0
+    [[NOTE 21]]
+        text = "GE_0/0"
+        interface = FTP_1 GE_0/0
+        font = "Arial,10,-1,5,50,0,0,0,0,0"
+        x = 29.0
+        y = 62.0
+        z = 6.0
+    [[SHAPE 1]]
+        type = rectangle
+        width = 426.0
+        height = 131.0
+        fill_color = "#00ff00"
+        border_color = "#666666"
+        border_style = 0
+        x = -208.0
+        y = 196.0
+        z = 3.0
+    [[SHAPE 2]]
+        type = rectangle
+        width = 261.0
+        height = 473.0
+        border_color = "#666666"
+        border_style = 2
+        x = 273.0
+        y = -295.0
+        z = 3.0
+    [[SHAPE 3]]
+        type = rectangle
+        width = 382.0
+        height = 473.0
+        border_color = "#666666"
+        border_style = 2
+        x = -114.0
+        y = -295.0
+        z = 2.0
+    [[SHAPE 4]]
+        type = rectangle
+        width = 425.0
+        height = 472.0
+        border_color = "#666666"
+        border_style = 2
+        x = -546.0
+        y = -295.0
+        z = 1.0
