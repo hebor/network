@@ -1,0 +1,68 @@
+version = 5.10.2
+[vbox 127.0.0.1:16600]
+    workingdir = e:\github\network\hcl实验拓扑文件\ppp_basic_experiment\working
+    udp = 10000
+    [[MSR36-20 R1]]
+        device_id = 1
+        bridge_mac = 12-dc-37-7d-01-00
+        slot0 = MSR36 384
+        Ser_1/0 = R2 Ser_1/0
+        x = -367.0
+        y = -116.0
+        z = 5.0
+    [[MSR36-20 R2]]
+        device_id = 2
+        bridge_mac = 12-dc-3a-48-02-00
+        slot0 = MSR36 384
+        Ser_1/0 = R1 Ser_1/0
+        Ser_2/0 = R3 Ser_1/0
+        Ser_3/0 = R3 Ser_2/0
+        x = -65.0
+        y = -116.0
+        z = 5.0
+    [[MSR36-20 R3]]
+        device_id = 3
+        bridge_mac = 12-dc-3d-0a-03-00
+        slot0 = MSR36 384
+        Ser_1/0 = R2 Ser_2/0
+        Ser_2/0 = R2 Ser_3/0
+        x = 252.0
+        y = -116.0
+        z = 5.0
+[Non-vBox-DATA]
+    m11 = 1.5
+    m22 = 1.5
+    [[NOTE 1]]
+        text = "192.168.1.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = -273.0
+        y = -162.0
+        z = 6.0
+    [[NOTE 2]]
+        text = "192.168.2.0/24"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 45.0
+        y = -156.0
+        z = 6.0
+    [[NOTE 3]]
+        text = "PPP MP"
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        x = 68.0
+        y = -54.0
+        z = 6.0
+    [[NOTE 4]]
+        text = "实验需求：\n1、R1和R2使用PPP链路直连，R2和R3把2条PPP链路捆绑为MP直连\n2、R1和R2之间使用单向chap验证\n3、R2和R3之间进行双向chap验证"
+        font = "Arial,11,-1,5,50,0,0,0,0,0,Regular"
+        x = -226.73863607376245
+        y = 70.76702730475878
+        z = 6.0
+    [[SHAPE 1]]
+        type = rectangle
+        width = 470.1097397793778
+        height = 84.85281374238568
+        fill_color = "#00ff00"
+        border_color = "#666666"
+        border_style = 0
+        x = -227.572113832392
+        y = 69.29646455628165
+        z = 3.0
