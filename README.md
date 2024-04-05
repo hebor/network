@@ -9,7 +9,7 @@ netsh interface ip set dns name="以太网 3" static 114.114.114.114
 netsh interface ip set dns name="以太网 3" source=dhcp
 ```
 
-虽然记录更改DNS的方式，但如果真的需要同时修改IP和DNS，还是建议使用控制面板改，如果只是为了测试临时修改IP，CMD确实能够提高效率
+虽然记录更改DNS的方式，但如果真的需要同时修改IP和DNS，还是建议使用windows控制面板改，如果只是为了测试临时修改IP，CMD确实能够提高效率
 
 **关于VirtualBox的虚拟网卡**
 
@@ -21,4 +21,4 @@ cd D:\Oracle\VirtualBox\    #进入VirtualBox安装目录
 .\vboxmanage hostonlyif remove "VirtualBox Host-Only Ethernet Adapter #2"    #删除指定的仅主机网卡
 ```
 
-百度能找到多种解决方式，但步骤比较繁琐，需要修改注册表云云，眼睛都要看花
+这种方式并不适用任何情况，如果不想修改注册表，可以先尝试用这种方式解决
