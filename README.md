@@ -1,4 +1,6 @@
-**能提高效率的windows工具**
+# 工具
+
+**windows临时修改IP**
 
 ```
 # Windows cmd临时修改IP
@@ -10,6 +12,8 @@ netsh interface ip set dns name="以太网 3" source=dhcp
 ```
 
 虽然记录更改DNS的方式，但如果真的需要同时修改IP和DNS，还是建议使用windows控制面板改，如果只是为了测试临时修改IP，CMD确实能够提高效率
+
+## Nmap
 
 **关于VirtualBox的虚拟网卡**
 
