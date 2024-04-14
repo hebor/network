@@ -1,21 +1,3 @@
-
-##### ARP
-
-基础ARP：从逻辑地址映射到一个物理地址。ARP请求目的MAC是`全F`<br/>代理ARP：不同网络的设备在不配置网关的情况下能够通过ARP代理实现通信<br/>免费ARP：最主要的作用是检测地址冲突
-
-示例：ARP代理
-
-```
-[AR1]ip route-static 23.1.1.0 24 g0/0/0
-[AR2-GigabitEthernet0/0/0]arp-proxy enable
-[AR2-GigabitEthernet0/0/1]arp-proxy enable
-[AR3]ip route-static 12.1.1.0 24 g0/0/1
-```
-
-```diff
-- 实现ARP代理需要满足两个条件：1.没有路由功能的主机，2.有路由功能，目的地指向本地端口
-```
-
 ##### IP路由基础
 
 路由器的两个基本功能
