@@ -163,9 +163,12 @@ Gitbook 最灵活的地方就是有很多插件可以使用，也可以自己写
 // book.js
 module.exports = {
     title: 'Gitbook电子书',
-    author: 'hebor'
+    author: 'hebor',
     lang: 'zh-cn',
-    description: 'Gitbook电子书示例'
+    description: 'Gitbook电子书示例',
+    //plugins:[],    插件列表
+    //pluginsConfig: {},    插件全局配置
+    //variables: {}    模板变量
 };
 ```
 
