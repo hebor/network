@@ -115,7 +115,7 @@ Switch1(config)#enable secret cisco    #设置特权模式的密文密码，通�
 | 存储器                                    | 说明                                                         |
 | ----------------------------------------- | ------------------------------------------------------------ |
 | ROM（Read Only Memory）                   | ROM存储路由器加电自检（POST, Power-On Self-Test）、启动程序（Bootstrap Program）和部分或全部IOS。路由器的ROM是可擦写的，所以IOS是可升级的 |
-| NVRAM（Nonvolatile Random Access Memory） | 非易失RAN，存储路由器的启动配置文件。NVRAM是可擦写的，可将路由器的配置信息拷贝到NVRAM中 |
+| NVRAM（Nonvolatile Random Access Memory） | 非易失RAM，存储路由器的启动配置文件。NVRAM是可擦写的，可将路由器的配置信息拷贝到NVRAM中 |
 | FLASH RAM                                 | 闪存，一种特殊的ROM，可擦写、编程，用于存储Cisco IOS的其他版本，用于对路由器的IOS进行升级，FLASH是可以被格式化的 |
 | RAM（Random Access Memory）               | RAM与PC上的内存相似，提供临时信息的存储，同时保存设备当前的路由表和配置信息 |
 
