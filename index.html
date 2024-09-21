@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>table style</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>状态</th>
+                <th>说明</th>
+            </tr>
+            <tr>
+                <td>Down（失效状态）</td>
+                <td>ospf关闭状态，没有收到hello包，在Down状态下路由器会发出第一个hello包；执行OSPF重置后也会重新恢复为DOWN状态</td>
+            </tr>
+            <tr>
+                <td>Init（初始状态）</td>
+                <td>向外收发hello包寻找邻居，但没有在对方的hello包的邻居列表中看到自己；路由器收到一个hello包，且在该hello包的邻居列表没有自身的Router ID，则将自己和邻居的关系转变为Init状态</td>
+            </tr>
+            <tr>
+                <td>Two-Way（双向通讯状态）</td>
+                <td>在收到的hello包的邻居列表中看到自身的Router ID，双向会话建立，形成邻居关系；在MA网络中，Two-Way状态将开始选举DR/BDR，若P2P网络则跳过选举</td>
+            </tr>
+            <tr>
+                <td colspan="2">---邻居发现阶段---</td>
+            </tr>
+            <tr>
+                <td>ExStart（交换初始状态）</td>
+                <td>ExStart是FirstDBD，决定信息交换时路由器的主从关系，Router ID大的为master；在相互交换DBD包的过程中，双方互相发送的第一个DBD包是空包，此两个包是为了选举出master，在ospf数据包报头中有包含Router ID的字段；思科设备缺省情况下在此阶段会检查MTU，如果MTU不一致则卡在ExStart状态</td>
+            </tr>
+            <tr>
+                <td>ExChange（交换状态）</td>
+                <td>向邻居发送完整的DBD数据包，DBD包中会包含LSA的头部简要信息</td>
+            </tr>
+            <tr>
+                <td colspan="2">---数据库开始同步---</td>
+            </tr>
+            <tr>
+                <td>Loading（加载状态）</td>
+                <td>LSR和LSU交换；收到邻居DBD包后，将对方的DBD包和自己的LSDB做对比，找出自己LSDB没有的LSA，相互发送LSR，LSU，LSACK</td>
+            </tr>
+            <tr>
+                <td>Full（完全邻接状态）</td>
+                <td>LSDB同步，相互发送HELLO包形成邻接关系</td>
+            </tr>
+            <tr>
+                <td colspan="2">-------------------------LSDB同步完成---</td>
+            </tr>
+        </table>
+    </body>
+</html>
